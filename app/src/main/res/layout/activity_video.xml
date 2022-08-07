@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityVideo">
+
+    <VideoView
+        android:id="@+id/video_view"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp" />
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:id="@+id/llButtons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/btnPlayLocalVideo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onPlayLocalVideo"
+            android:text="Play Local Video" />
+
+        <Button
+            android:id="@+id/btnStreamVideo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onStreamVideo"
+            android:text="Stream Remote Video" />
+
+        <Button
+            android:id="@+id/btnRecordVideo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRecordVideo"
+            android:text="Record Video" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
